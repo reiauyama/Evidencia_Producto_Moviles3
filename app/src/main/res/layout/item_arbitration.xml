@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_marginBottom="5dp"
+    android:elevation="5dp"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="274dp"
+            android:layout_marginTop="1dp"
+            android:background="#171616"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ARtxMisionType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Mission Type"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/ARtxtEnemyLevel"
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="EnemyLevel"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ARtxtNodeMsion"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Nodo de la mision"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ARtxtWarframe"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Warframe"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtWeapon1"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Weapon1"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtWeapon2"
+                            android:layout_width="154dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Weapon2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtWeapon3"
+                            android:layout_width="164dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Weapon3"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ARtxtBoost1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Boost 1"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtBoost2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Boost 2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtBoost3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Boost 3"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/ARtxtBoost4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Boost 4"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ARtxtExpireTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Time to Expire"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/escvitus" />
+
+                <ImageView
+                    android:id="@+id/ARimgFactiontype"
+                    android:layout_width="119dp"
+                    android:layout_height="101dp"
+                    app:srcCompat="@drawable/wflogo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

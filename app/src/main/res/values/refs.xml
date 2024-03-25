@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="servicelist_mission_type">
+            <item>Tipo de Misión 1</item>
+            <item>Tipo de Misión 2</item>
+            <!-- Agrega más elementos según sea necesario -->
+        </string-array>
+
+
+</resources>
