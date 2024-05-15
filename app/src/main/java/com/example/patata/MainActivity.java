@@ -17,15 +17,17 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnVoidFissures,btnArbitrations;
+    Button btnVoidFissures,btnArbitrations, btnInicioSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        btnInicioSesion = findViewById(R.id.btnInicioSesion);
         btnVoidFissures = findViewById(R.id.btnVoidFissures);
         btnArbitrations = findViewById(R.id.btnArbitrations);
+
         btnVoidFissures.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Arbitrations.class);
+                startActivity(intent);
+            }
+        });
+        btnInicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, InicioSesion.class);
                 startActivity(intent);
             }
         });

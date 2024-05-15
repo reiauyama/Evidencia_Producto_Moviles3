@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353393677002",
+    "project_id": "statframebd",
+    "storage_bucket": "statframebd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353393677002:android:eb06b32a9585b286e99a33",
+        "android_client_info": {
+          "package_name": "com.example.patata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHkc6Ml8SIB_wavf3NsSDwe8H446Hy1DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353393677002:android:b3578444a770963fe99a33",
+        "android_client_info": {
+          "package_name": "om.example.patata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHkc6Ml8SIB_wavf3NsSDwe8H446Hy1DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

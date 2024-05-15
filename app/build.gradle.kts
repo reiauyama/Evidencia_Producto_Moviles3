@@ -3,6 +3,7 @@ import org.gradle.internal.impldep.bsh.commands.dir
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -45,6 +46,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation("com.github.bumptech.glide:glide:4.14.2")
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)}
