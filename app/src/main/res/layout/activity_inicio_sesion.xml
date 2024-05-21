@@ -38,7 +38,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Nombre de Usuario" />
+            android:hint="Nombre de usuario"
+            android:textColorHint="@color/Gray"
+             />
 
         <EditText
             android:id="@+id/etEmail"
@@ -72,7 +74,7 @@
                 android:text="Registrarse" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
