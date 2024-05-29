@@ -4,7 +4,7 @@
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frame_layout"
+    android:id="@+id/xdxdxdxd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
@@ -36,31 +36,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMenuTittle" />
-
-    <Button
-        android:id="@+id/btnArbitrations"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#1F1C1C"
-        android:text="Arbitrations"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVoidFissures" />
-
     <Button
         android:id="@+id/btnDroptable"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#1F1C1C"
-        android:text="Tabla de drops (coming soon)"
+        android:text="Tabla de drops"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnArbitrations" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVoidFissures" />
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#1F1C1C"
+        android:text="Todas las funciones"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDroptable" />
+
+
 
     <Button
         android:id="@+id/btnInicioSesion"
@@ -72,7 +73,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDroptable" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAll" />
 
     <ImageView
         android:id="@+id/imgMenuft"

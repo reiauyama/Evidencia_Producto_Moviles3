@@ -17,31 +17,27 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnVoidFissures,btnArbitrations, btnInicioSesion;
+    Button btnVoidFissures,btnArbitrations, btnInicioSesion,btnDroptable,btnAll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        btnDroptable = findViewById(R.id.btnDroptable);
         btnInicioSesion = findViewById(R.id.btnInicioSesion);
         btnVoidFissures = findViewById(R.id.btnVoidFissures);
-        btnArbitrations = findViewById(R.id.btnArbitrations);
+        btnAll= findViewById(R.id.btnAll);
 
         btnVoidFissures.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, VoidFissures.class);
+                Intent intent = new Intent(MainActivity.this, WarframeVoidFissure.class);
                 startActivity(intent);
             }
         });
-        btnArbitrations.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Arbitrations.class);
-                startActivity(intent);
-            }
-        });
+
+
         btnInicioSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,5 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnDroptable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DropTableActivity.class);
+                startActivity(intent);
+            }
+        });
 
-}}
+
+    }}
