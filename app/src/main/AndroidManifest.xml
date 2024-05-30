@@ -17,11 +17,7 @@
         <activity
             android:name=".AllFunctions"
             android:exported="false" />
-        <activity
-            android:name=".fissure.MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Patata" />
+
         <activity
             android:name=".InicioSesion"
             android:exported="false" />
@@ -30,6 +26,12 @@
             android:exported="false" />
         <activity
             android:name=".DropTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CyclesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

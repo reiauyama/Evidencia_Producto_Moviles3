@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:context=".CyclesActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#292727"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="373dp"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="288dp"
+                android:layout_height="153dp"
+                app:srcCompat="@drawable/cetus" />
+
+            <TextView
+                android:id="@+id/cetusTimeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Cetus Cycle Time Left" />
+
+            <TextView
+                android:id="@+id/cetusState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Cetus Cycle State" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#292727"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="288dp"
+                android:layout_height="153dp"
+                app:srcCompat="@drawable/fortuna" />
+
+            <TextView
+                android:id="@+id/vallisTimeLeft"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Vallis Cycle Time Left" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/vallisState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vallis Cycle State" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="392dp"
+        android:layout_height="218dp"
+        app:cardBackgroundColor="#292727"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="378dp"
+            android:layout_height="229dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="288dp"
+                android:layout_height="153dp"
+                app:srcCompat="@drawable/deriva_cambion" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/cambionTimeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambion Cycle Time Left" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/cambionState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambion Cycle State" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

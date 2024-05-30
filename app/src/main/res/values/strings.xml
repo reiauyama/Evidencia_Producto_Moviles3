@@ -2,4 +2,24 @@
 
 
     <string name="title_activity_main">MainActivity</string>
+
+        <!-- other strings -->
+        <string-array name="languages_array">
+            <item>en</item>
+            <item>fr</item>
+            <item>it</item>
+            <item>de</item>
+            <item>es</item>
+            <item>pt</item>
+            <item>ru</item>
+            <item>pl</item>
+            <item>uk</item>
+            <item>tr</item>
+            <item>ja</item>
+            <item>zh</item>
+            <item>ko</item>
+            <item>tc</item>
+        </string-array>
+
+
 </resources>
