@@ -7,14 +7,11 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager2.widget.ViewPager2;
 
-import com.google.android.material.tabs.TabLayout;
-
-import java.util.List;
+import com.example.patata.ui.AllFunctions;
+import com.example.patata.ui.DropTableActivity;
+import com.example.patata.ui.InicioSesion;
+import com.example.patata.ui.WarframeVoidFissure;
 
 public class MainActivity extends AppCompatActivity {
     Button btnVoidFissures,btnArbitrations, btnInicioSesion,btnDroptable,btnAll, btnCycles;

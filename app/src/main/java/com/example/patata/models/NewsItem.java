@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.models;
 
 import java.util.Map;
 

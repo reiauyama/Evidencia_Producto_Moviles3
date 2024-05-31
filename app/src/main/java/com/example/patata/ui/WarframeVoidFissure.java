@@ -1,9 +1,15 @@
-package com.example.patata;
+package com.example.patata.ui;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.patata.R;
+import com.example.patata.adapters.VoidFissureAdapter;
+import com.example.patata.models.Fissure;
+import com.example.patata.network.WarframeApi;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -11,8 +17,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.util.List;
 
 public class WarframeVoidFissure extends AppCompatActivity {
 

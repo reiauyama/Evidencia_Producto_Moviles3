@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.ui;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,12 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.patata.adapters.NewsAdapter;
+import com.example.patata.R;
+import com.example.patata.models.NewsItem;
+import com.example.patata.network.ApiService;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

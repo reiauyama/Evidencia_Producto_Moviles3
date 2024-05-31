@@ -15,23 +15,29 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".AllFunctions"
+            android:name=".ui.AllFunctions"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NightWaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VoidTraderActivity"
             android:exported="false" />
 
         <activity
-            android:name=".InicioSesion"
+            android:name=".ui.InicioSesion"
             android:exported="false" />
         <activity
-            android:name=".WarframeVoidFissure"
+            android:name=".ui.WarframeVoidFissure"
             android:exported="false" />
         <activity
-            android:name=".DropTableActivity"
+            android:name=".ui.DropTableActivity"
             android:exported="false" />
         <activity
-            android:name=".CyclesActivity"
+            android:name=".ui.CyclesActivity"
             android:exported="false" />
         <activity
-            android:name=".NewsActivity"
+            android:name=".ui.NewsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

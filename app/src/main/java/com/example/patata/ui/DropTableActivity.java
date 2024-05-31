@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.ui;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -8,6 +8,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.patata.adapters.DropAdapter;
+import com.example.patata.R;
+import com.example.patata.models.Drop;
+import com.example.patata.network.WarframeDropApi;
+
 import java.util.ArrayList;
 import java.util.List;
 import retrofit2.Call;

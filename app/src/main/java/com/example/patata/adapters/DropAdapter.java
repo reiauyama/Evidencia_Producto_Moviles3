@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.adapters;
 
 
 import android.view.LayoutInflater;
@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.patata.R;
+import com.example.patata.models.Drop;
+
 import java.util.List;
 
 public class DropAdapter extends RecyclerView.Adapter<DropAdapter.DropViewHolder> {

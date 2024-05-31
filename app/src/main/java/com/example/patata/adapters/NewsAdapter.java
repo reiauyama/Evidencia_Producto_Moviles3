@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.adapters;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.patata.R;
+import com.example.patata.models.NewsItem;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

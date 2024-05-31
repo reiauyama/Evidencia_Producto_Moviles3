@@ -1,4 +1,4 @@
-package com.example.patata;
+package com.example.patata.models;
 
 public class Drop {
     private String place;

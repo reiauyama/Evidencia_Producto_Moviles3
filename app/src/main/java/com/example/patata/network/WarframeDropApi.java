@@ -1,4 +1,6 @@
-package com.example.patata;
+package com.example.patata.network;
+
+import com.example.patata.models.Drop;
 
 import java.util.List;
 import retrofit2.Call;

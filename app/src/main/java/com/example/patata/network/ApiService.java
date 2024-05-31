@@ -1,4 +1,6 @@
-package com.example.patata;
+package com.example.patata.network;
+
+import com.example.patata.models.NewsItem;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

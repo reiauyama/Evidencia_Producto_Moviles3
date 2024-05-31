@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".AllFunctions">
+    tools:context=".ui.AllFunctions">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -65,7 +65,7 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/Baro"
+            android:id="@+id/btnIrVoidTrader"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
@@ -74,7 +74,7 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/noraNight"
+            android:id="@+id/btnIrNightWave"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"

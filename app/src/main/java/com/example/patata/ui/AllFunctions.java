@@ -1,18 +1,16 @@
-package com.example.patata;
+package com.example.patata.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.patata.R;
 
 public class AllFunctions extends AppCompatActivity {
-Button btnCycles,btnIrVoidFissures,btnIrrDroptable,IrNews;
+Button btnCycles,btnIrVoidFissures,btnIrrDroptable,IrNews, btnIrVoidTrader,btnIrNightWave;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +19,23 @@ Button btnCycles,btnIrVoidFissures,btnIrrDroptable,IrNews;
         btnIrVoidFissures = findViewById(R.id.btnIrVoidFissures);
         btnIrrDroptable = findViewById(R.id.btnIrrDroptable);
         IrNews = findViewById(R.id.IrNews);
+        btnIrNightWave = findViewById(R.id.btnIrNightWave);
+        btnIrVoidTrader = findViewById(R.id.btnIrVoidTrader);
+
+        btnIrVoidTrader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllFunctions.this, VoidTraderActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnIrNightWave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllFunctions.this, NightWaveActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnIrVoidFissures.setOnClickListener(new View.OnClickListener() {
             @Override
