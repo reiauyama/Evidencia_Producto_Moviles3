@@ -62,13 +62,15 @@ public class NewsActivity extends AppCompatActivity {
 
         ApiService apiService = retrofit.create(ApiService.class);
         Call<List<NewsItem>> call = apiService.getNews();
+
         call.enqueue(new Callback<List<NewsItem>>() {
             @Override
             public void onResponse(Call<List<NewsItem>> call, Response<List<NewsItem>> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    List<NewsItem> newsList = response.body();
-                    newsAdapter = new NewsAdapter(newsList, selectedLanguage);
+                    List<NewsItem> newsItems = response.body();
+                    newsAdapter = new NewsAdapter(newsItems);
                     recyclerView.setAdapter(newsAdapter);
+                    newsAdapter.setLanguage(selectedLanguage);
                 }
             }
 

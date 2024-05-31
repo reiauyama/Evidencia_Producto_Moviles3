@@ -1,5 +1,7 @@
 package com.example.patata;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,53 +9,64 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
-import java.util.Map;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
-    private List<NewsItem> newsList;
-    private String selectedLanguage;
+    private List<NewsItem> newsItems;
+    private String language = "en"; // Default language
 
-    public NewsAdapter(List<NewsItem> newsList, String selectedLanguage) {
-        this.newsList = newsList;
-        this.selectedLanguage = selectedLanguage;
+    public NewsAdapter(List<NewsItem> newsItems) {
+        this.newsItems = newsItems;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+        notifyDataSetChanged();
     }
 
     @NonNull
     @Override
     public NewsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_news, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_item, parent, false);
         return new NewsViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
-        NewsItem newsItem = newsList.get(position);
-        Map<String, String> translations = newsItem.getTranslations();
-        String message = translations != null ? translations.get(selectedLanguage) : "";
-        holder.newsTitle.setText(message);
-        Glide.with(holder.itemView.getContext()).load(newsItem.getImageLink()).into(holder.newsImage);
+        NewsItem newsItem = newsItems.get(position);
+        String translatedMessage = newsItem.getTranslations().get(language);
+        holder.newsTextView.setText(translatedMessage != null ? translatedMessage : newsItem.getMessage());
+        Picasso.get().load(newsItem.getImageLink()).into(holder.newsImageView);
+        holder.newsLinkTextView.setText(newsItem.getLink());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Abrir el enlace en el navegador
+                String link = newsItem.getLink(); // Obtener el enlace del elemento
+                Uri uri = Uri.parse(link);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return newsList.size();
-    }
-
-    public void setLanguage(String language) {
-        this.selectedLanguage = language;
-        notifyDataSetChanged();
+        return newsItems.size();
     }
 
     public static class NewsViewHolder extends RecyclerView.ViewHolder {
-        TextView newsTitle;
-        ImageView newsImage;
+        TextView newsTextView;
+        ImageView newsImageView;
+        TextView newsLinkTextView;
 
-        public NewsViewHolder(View itemView) {
+        public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
-            newsTitle = itemView.findViewById(R.id.news_title);
-            newsImage = itemView.findViewById(R.id.news_image);
+            newsTextView = itemView.findViewById(R.id.news_text);
+            newsImageView = itemView.findViewById(R.id.news_image);
+            newsLinkTextView = itemView.findViewById(R.id.news_link);
         }
     }
 }

@@ -3,6 +3,25 @@ package com.example.patata;
 import java.util.Map;
 
 public class NewsItem {
+    private String message;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    private String link;
     private String imageLink;
     private Map<String, String> translations;
 

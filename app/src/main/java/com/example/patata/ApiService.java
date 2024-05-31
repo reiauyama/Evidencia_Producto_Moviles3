@@ -5,6 +5,6 @@ import retrofit2.http.GET;
 import java.util.List;
 
 public interface ApiService {
-    @GET("pc/news")
+    @GET("pc/news/")
     Call<List<NewsItem>> getNews();
 }

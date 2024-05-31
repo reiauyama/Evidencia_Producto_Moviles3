@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
             android:text="Void Fissures"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <Button
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
             android:text="Tabla de drops"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <Button
@@ -40,6 +42,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Estado del mundo"
             android:textSize="16sp" />
 
@@ -48,6 +51,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Noticias"
             android:textSize="16sp" />
 
@@ -56,6 +60,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Actividades"
             android:textSize="16sp" />
 
@@ -64,6 +69,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Baro Ki'teer"
             android:textSize="16sp" />
 
@@ -72,6 +78,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Onda Nocturna"
             android:textSize="16sp" />
 
@@ -80,11 +87,13 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
+            android:textColor="@color/white"
             android:text="Incursiones"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/Syndicates"
+            android:textColor="@color/white"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
@@ -97,6 +106,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#1F1C1C"
             android:text="volver"
+            android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>
 
