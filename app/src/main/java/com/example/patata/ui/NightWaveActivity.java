@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.patata.R;
-import com.example.patata.ChallengeAdapter;
+import com.example.patata.adapters.ChallengeAdapter;
 import com.example.patata.models.Challenge;
 import com.example.patata.models.NightwaveResponse;
 import com.example.patata.network.NightWave;

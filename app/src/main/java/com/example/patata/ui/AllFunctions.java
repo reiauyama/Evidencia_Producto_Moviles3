@@ -7,20 +7,41 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.patata.MainActivity;
 import com.example.patata.R;
 
 public class AllFunctions extends AppCompatActivity {
-Button btnCycles,btnIrVoidFissures,btnIrrDroptable,IrNews, btnIrVoidTrader,btnIrNightWave;
+Button btnCycles,btnIrVoidFissures,backToHome,btnIrrDroptable,IrNews, btnIrVoidTrader,btnIrNightWave, btnIrAlerts,incurtions;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_functions);
+
+        incurtions = findViewById(R.id.incursions);
         btnCycles = findViewById(R.id.WorldState);
         btnIrVoidFissures = findViewById(R.id.btnIrVoidFissures);
         btnIrrDroptable = findViewById(R.id.btnIrrDroptable);
         IrNews = findViewById(R.id.IrNews);
         btnIrNightWave = findViewById(R.id.btnIrNightWave);
+        btnIrAlerts = findViewById(R.id.btnIrAlerts);
         btnIrVoidTrader = findViewById(R.id.btnIrVoidTrader);
+        backToHome = findViewById(R.id.backToHome);
+
+        incurtions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllFunctions.this, ArchonHuntActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnIrAlerts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllFunctions.this, AlertsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnIrVoidTrader.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,5 +87,15 @@ Button btnCycles,btnIrVoidFissures,btnIrrDroptable,IrNews, btnIrVoidTrader,btnIr
                 startActivity(intent);
             }
         });
+        backToHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AllFunctions.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
 }
